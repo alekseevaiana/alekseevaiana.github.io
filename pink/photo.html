@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Фото</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async></script>
+  <script src="js/svg4everybody.js"></script>
+</head>
+<body class="theme">
+<header class="page-header">
+  <div class="page-header__title-wrapper">
+    <div class="page-header__wrapper">
+      <div class="page-header__title">
+        <div class="container page-header__container">
+          <a class="page-header__logo page-header__logo--atr" href="index.html">
+            <svg class="page-header__logo-icon page-header__logo-icon--mobile" width="74" height="23">
+              <use xlink:href="./img/sprite.svg#logo-pink-white-mobile"></use>
+            </svg>
+            <svg class="page-header__logo-icon page-header__logo-icon--tablet" width="151" height="41">
+              <use xlink:href="./img/sprite.svg#logo-pink-white-tablet"></use>
+            </svg>
+            <svg class="page-header__logo-icon page-header__logo-icon--desktop" width="147" height="41">
+              <use xlink:href="./img/sprite.svg#logo-pink-white-desktop"></use>
+            </svg>
+          </a>
+          <a class="page-header__toggle visually-hidden" href="#" aria-label="Закрыть меню"><span
+            class="visually-hidden">Закрыть меню</span>
+            <svg width="23" height="24">
+              <use xlink:href="./img/sprite.svg#menu-cross"></use>
+            </svg>
+          </a>
+          <a class="page-header__toggle visually-hidden" href="#" aria-label="Открыть меню"><span
+            class="visually-hidden">Открыть меню</span>
+            <svg width="23" height="24">
+              <use xlink:href="./img/sprite.svg#menu-burger"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list list">
+          <li class="main-nav__item list__item">
+            <a class="main-nav__link list__link" href="./index.html">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link list__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link list__link" href="./form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+    <div class="caption caption--photo-main">
+      <h1 class="caption__text">Фотографии
+        пользователей</h1>
+    </div>
+</header>
+<main class="page-main photo-main">
+  <div class="slogan slogan--above-photos container photo-main__slogan">
+    <p class="slogan__text slogan__text--normal">Взгляните на фотографии, которые выкладывают пользователи!
+      Видите,&nbsp;как&nbsp;не хватает ваших?</p>
+  </div>
+  <article class="photo-post photo-post--panorama">
+    <div class="photo-post__descr-wrapper">
+      <span class="photo-post__descr">Панорама дня</span>
+    </div>
+    <a href="#" class="photo-post__img-full">
+      <picture>
+        <source type="image/webp" media="(min-width: 960px)"
+          srcset="./img/panorama-desktop@1x.webp 1x, ./img/panorama-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 660px)"
+          srcset="./img/panorama-tablet@1x.webp 1x, ./img/panorama-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="./img/panorama-mobile@1x.webp 1x, ./img/panorama-mobile@2x.webp 2x">
+        <source media="(min-width: 960px)"
+          srcset="./img/panorama-desktop@1x.jpg 1x, ./img/panorama-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)"
+          srcset="./img/panorama-tablet@1x.jpg 1x, ./img/panorama-tablet@2x.jpg 2x">
+        <img src="./img/panorama-mobile@1x.jpg" srcset="./img/panorama-mobile@2x.jpg 2x"
+          alt="Фото" class="photo-post__picture">
+      </picture>
+    </a>
+    <div class="container">
+      <div class="photo-post__wrapper photo-post__wrapper--panorama">
+        <p class="photo-post__author">Анна
+          <span class="photo-post__time">(5 минут назад)</span>
+        </p>
+        <p class="photo-post__text theme__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
+          трансляцию в
+          перископе, задавайте свои вопросы!</p>
+        <p class="photo-post__footer">Нравится: 215</p>
+      </div>
+    </div>
+  </article>
+  <div class="container page-main__photos">
+    <article class="photo-post">
+      <a href="#" class="photo-post__img-full">
+        <picture>
+          <source type="image/webp" media="(min-width: 960px)"
+            srcset="./img/photo-car-desktop@1x.webp 1x, ./img/photo-car-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="./img/photo-car-tablet@1x.webp 1x, ./img/photo-car-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/photo-car-mobile@1x.webp 1x, ./img/photo-car-mobile@2x.webp 2x">
+          <source media="(min-width: 960px)"
+            srcset="./img/photo-car-desktop@1x.jpg 1x, ./img/photo-car-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)"
+            srcset="./img/photo-car-tablet@1x.jpg 1x, ./img/photo-car-tablet@2x.jpg 2x">
+          <img src="./img/photo-car-mobile@1x.jpg" srcset="./img/photo-car-mobile@2x.jpg 2x"
+            alt="Фото" class="photo-post__picture">
+        </picture>
+      </a>
+      <div class="photo-post__wrapper">
+        <p class="photo-post__author">Левон
+          <span class="photo-post__time">(5 часов назад)</span>
+        </p>
+        <p class="photo-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+        <p class="photo-post__footer">Нравится: 356</p>
+      </div>
+    </article>
+    <article class="photo-post">
+      <a href="#" class="photo-post__img-full">
+        <picture>
+          <source type="image/webp" media="(min-width: 960px)"
+            srcset="./img/photo-drumset-desktop@1x.webp 1x, ./img/photo-drumset-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="./img/photo-drumset-tablet@1x.webp 1x, ./img/photo-drumset-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="./img/photo-drumset-mobile@1x.webp 1x, ./img/photo-drumset-mobile@2x.webp 2x">
+          <source media="(min-width: 960px)"
+            srcset="./img/photo-drumset-desktop@1x.jpg 1x, ./img/photo-drumset-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)"
+            srcset="./img/photo-drumset-tablet@1x.jpg 1x, ./img/photo-drumset-tablet@2x.jpg 2x">
+          <img src="./img/photo-drumset-mobile@1x.jpg" srcset="./img/photo-drumset-mobile@2x.jpg 2x"
+            alt="Фото" class="photo-post__picture">
+        </picture>
+      </a>
+      <div class="photo-post__wrapper">
+        <p class="photo-post__author">Антон
+          <span class="photo-post__time">(12 часов назад)</span>
+        </p>
+        <p class="photo-post__text">Соседи будут рады!</p>
+        <p class="photo-post__footer">Нравится: 666</p>
+      </div>
+    </article>
+    <article class="photo-post">
+      <a href="#" class="photo-post__img-full">
+        <picture>
+          <source type="image/webp" media="(min-width: 960px)"
+            srcset="./img/photo-window-desktop@1x.webp 1x, ./img/photo-window-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="./img/photo-window-tablet@1x.webp 1x, ./img/photo-window-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/photo-window-mobile@1x.webp 1x, ./img/photo-window-mobile@2x.webp 2x">
+          <source media="(min-width: 960px)" srcset="./img/photo-window-desktop@1x.jpg 1x, ./img/photo-window-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="./img/photo-window-tablet@1x.jpg 1x, ./img/photo-window-tablet@2x.jpg 2x">
+          <img src="./img/photo-window-mobile@1x.jpg" srcset="./img/photo-window-mobile@2x.jpg 2x" alt="Фото" class="photo-post__picture">
+        </picture>
+      </a>
+      <div class="photo-post__wrapper">
+        <p class="photo-post__author">Борис <span class="photo-post__time">(20 часов назад)</span></p>
+        <p class="photo-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+        <p class="photo-post__footer">Нравится: 215</p>
+      </div>
+    </article>
+    <article class="photo-post">
+      <a href="#" class="photo-post__img-full">
+        <picture>
+          <source type="image/webp" media="(min-width: 960px)"
+            srcset="./img/photo-fair-desktop@1x.webp 1x, ./img/photo-fair-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="./img/photo-fair-tablet@1x.webp 1x, ./img/photo-fair-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/photo-fair-mobile@1x.webp 1x, ./img/photo-fair-mobile@2x.webp 2x">
+          <source media="(min-width: 960px)"
+            srcset="./img/photo-fair-desktop@1x.jpg 1x, ./img/photo-fair-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)"
+            srcset="./img/photo-fair-tablet@1x.jpg 1x, ./img/photo-fair-tablet@2x.jpg 2x">
+          <img src="./img/photo-fair-mobile@1x.jpg" srcset="./img/photo-fair-mobile@2x.jpg 2x" alt="Фото" class="photo-post__picture">
+        </picture>
+      </a>
+      <div class="photo-post__wrapper">
+        <p class="photo-post__author">Сергей
+          <span class="photo-post__time">(25 часов назад)</span>
+        </p>
+        <p class="photo-post__text">Самая кубанская в мире!</p>
+        <p class="photo-post__footer">Нравится: 4</p>
+      </div>
+    </article>
+    <article class="photo-post">
+      <a href="#" class="photo-post__img-full">
+        <picture>
+          <source type="image/webp" media="(min-width: 960px)"
+            srcset="./img/photo-pov-desktop@1x.webp 1x, ./img/photo-pov-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="./img/photo-pov-tablet@1x.webp 1x, ./img/photo-pov-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/photo-pov-mobile@1x.webp 1x, ./img/photo-pov-mobile@2x.webp 2x">
+          <source media="(min-width: 960px)"
+            srcset="./img/photo-pov-desktop@1x.jpg 1x, ./img/photo-pov-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)"
+            srcset="./img/photo-pov-tablet@1x.jpg 1x, ./img/photo-pov-tablet@2x.jpg 2x">
+          <img src="./img/photo-pov-mobile@1x.jpg" srcset="./img/photo-pov-mobile@2x.jpg 2x" alt="Фото" class="photo-post__picture">
+        </picture>
+      </a>
+      <div class="photo-post__wrapper">
+        <p class="photo-post__author">Максим
+          <span class="photo-post__time">(40 часов назад)</span>
+        </p>
+        <p class="photo-post__text">Где снег-то?</p>
+        <p class="photo-post__footer">Нравится: 150</p>
+      </div>
+    </article>
+    <article class="photo-post">
+      <a href="#" class="photo-post__img-full">
+        <picture>
+          <source type="image/webp" media="(min-width: 960px)"
+            srcset="./img/photo-wing-desktop@1x.webp 1x, ./img/photo-wing-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="./img/photo-wing-tablet@1x.webp 1x, ./img/photo-wing-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/photo-wing-mobile@1x.webp 1x, ./img/photo-wing-mobile@2x.webp 2x">
+          <source media="(min-width: 960px)"
+            srcset="./img/photo-wing-desktop@1x.jpg 1x, ./img/photo-wing-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)"
+            srcset="./img/photo-wing-tablet@1x.jpg 1x, ./img/photo-wing-tablet@2x.jpg 2x">
+          <img src="./img/photo-wing-mobile@1x.jpg" srcset="./img/photo-wing-mobile@2x.jpg 2x" alt="Фото" class="photo-post__picture">
+        </picture>
+      </a>
+      <div class="photo-post__wrapper">
+        <p class="photo-post__author">Надежда
+          <span class="photo-post__time">(45 часов назад)</span>
+        </p>
+        <p class="photo-post__text">Всем GM и взаимные лайки!</p>
+        <p class="photo-post__footer">Нравится: 2560</p>
+      </div>
+    </article>
+  </div>
+  <section class="slogan slogan--below-photos">
+    <p class="slogan__text slogan__text--normal">Затмите их всех!</p>
+    <p class="slogan__text slogan__text--normal">Выкладывайте все, что накопилось в телефоне!</p>
+  </section>
+  <section class="photo-filter">
+    <form class="photo-filter__form" action="https://echo.htmlacademy.ru" method="post">
+      <a href="#" class="photo-filter__img-full">
+        <picture>
+          <source type="image/webp" media="(min-width: 960px)"
+            srcset="./img/photo-road-desktop@1x.webp 1x, ./img/photo-road-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="./img/photo-road-tablet@1x.webp 1x, ./img/photo-road-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/photo-road-mobile@1x.webp 1x, ./img/photo-road-mobile@2x.webp 2x">
+          <source media="(min-width: 960px)"
+            srcset="./img/photo-road-desktop@1x.jpg 1x, ./img/photo-road-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)"
+            srcset="./img/photo-road-tablet@1x.jpg 1x, ./img/photo-road-tablet@2x.jpg 2x">
+          <img src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@2x.jpg 2x" alt="Фото">
+        </picture>
+      </a>
+      <div class="photo-filter__wrapper">
+        <ul class="photo-filter__list list">
+          <li class="photo-filter__item">
+            <button type="button" class="photo-filter__edit-btn--active photo-filter__edit-btn" aria-label="Обрезать">
+              <svg class="photo-filter__icon-crop" width="48" height="48">
+                <use xlink:href="./img/sprite.svg#editor-crop"></use>
+              </svg>
+            </button>
+            <div class="photo-filter__range-wrapper">
+              <div class="photo-filter__scale"></div>
+              <div class="photo-filter__range-toggle"></div>
+            </div>
+          </li>
+          <li class="photo-filter__item">
+            <button type="button" class="photo-filter__edit-btn" aria-label="Фильтр">
+              <svg class="photo-filter__icon-fill" width="48" height="48">
+                <use xlink:href="./img/sprite.svg#editor-fill"></use>
+              </svg>
+            </button>
+            <div class="photo-filter__range-wrapper">
+              <div class="photo-filter__scale"></div>
+              <div class="photo-filter__range-toggle"></div>
+            </div>
+          </li>
+          <li class="photo-filter__item">
+            <button type="button" class="photo-filter__edit-btn" aria-label="Добавить контраст">
+              <svg class="photo-filter__icon-contrast">
+                <use xlink:href="./img/sprite.svg#editor-contrast"></use>
+              </svg>
+            </button>
+            <div class="photo-filter__range-wrapper">
+              <div class="photo-filter__scale"></div>
+              <div class="photo-filter__range-toggle"></div>
+            </div>
+          </li>
+        </ul>
+        <div class="photo-filter__buttons">
+          <button type="submit" class="button button--post photo-filter__post-btn">
+            Запостить
+          </button>
+          <button type="submit" class="button button--cancel photo-filter__post-btn">Отмена</button>
+        </div>
+      </div>
+    </form>
+  </section>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__container container">
+    <a class="page-footer__logo page-footer__logo--atrubut" href="index.html">
+      <svg class="page-footer__logo-mobile">
+        <use xlink:href="./img/sprite.svg#logo-pink-footer" width="148" height="41"></use>
+      </svg>
+      <svg class="page-footer__logo-desktop">
+        <use xlink:href="./img/sprite.svg#logo-pink-footer-desktop" width="148" height="41"></use>
+      </svg>
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list list">
+        <li class="social__item">
+          <a href="" class="social__link social__link--twitter"><span class="visually-hidden">Twitter</span>
+            <img src="./img/icon-twitter.svg" alt="Twitter" width="17" height="15">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link social__link--facebook"><span class="visually-hidden">Facebook</span>
+            <img src="./img/icon-facebook.svg" alt="Facebook" width="9" height="19">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link social__link--youtube"><span class="visually-hidden">Youtube</span>
+            <img src="./img/icon-youtube.svg" alt="Youtube" width="15" height="14">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <span class="copyright__text theme__text">Разработано</span>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+        <svg width="27" height="35">
+          <use xlink:href="./img/sprite.svg#logo-htmlacademy" width="27" height="35"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+<script>svg4everybody();</script>
+</body>
+</html>
