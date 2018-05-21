@@ -3,8 +3,17 @@ body {
     margin-left: 20px;
 }
 
+.page-main {
+    font-size: 18px;
+}
+
+.page-header__descr {
+    font-size: 30px;
+}
+
 .page-main__link {
     color: black;
+    font-size: 18px;
 }
 
 .page-main__link:hover {
