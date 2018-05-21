@@ -1,0 +1,12 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin-left: 20px;
+}
+
+.page-main__link {
+    color: black;
+}
+
+.page-main__link:hover {
+    color: rgb(244, 113, 66);
+}
