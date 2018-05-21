@@ -373,6 +373,22 @@ body {
   max-width: 100%;
   height: auto;
 }
+.back-button {
+  position: fixed;
+  z-index: 6;
+  top: 10px;
+  right: 0;
+}
+.back-button a {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .page-header {
   background-color: #283645;
   color: #ffffff;
