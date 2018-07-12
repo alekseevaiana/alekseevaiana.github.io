@@ -22,7 +22,7 @@ body {
 }
 
 .page-main__link {
-    color: black;
+    color: #616161;
     font-size: 18px;
 }
 
@@ -63,6 +63,10 @@ body {
 
 .contacts__email-link {
     color: #F5F5F5;
+}
+
+.contacts__email-link:hover {
+    color: rgb(244, 113, 66);
 }
 
 .theme__title {
