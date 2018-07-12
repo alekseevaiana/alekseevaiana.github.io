@@ -1,20 +1,24 @@
 body {
     font-family: 'Tajawal', sans-serif;
-    margin-left: 20px;
-}
-
-.reset {
-    margin-bottom: 0;
-    margin-top: 0;
+    margin: 0;
 }
 
 .page-main {
     font-size: 18px;
+    background-color: #F5F5F5;
+    color: #616161;
+}
+
+.page-header {
+    background-color: #757575;
+    color: #F5F5F5;
+    margin: 0;
+    padding: 20px;
 }
 
 .page-header__descr {
     font-size: 30px;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 .page-main__link {
@@ -26,12 +30,51 @@ body {
     color: rgb(244, 113, 66);
 }
 
+.about {
+    max-width: 1000px;
+}
+
+.projects {
+    padding-bottom: 20px;
+}
+
+.projects__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.projects__item {
+    margin-right: 20px;
+}
+
+.projects__item:last-child {
+    margin-right: 0;
+}
+
+.contacts {
+    background-color: #757575;
+    color: #F5F5F5;
+    padding-bottom: 20px;
+}
+
+.contacts__email-link {
+    color: #F5F5F5;
+}
+
 .theme__title {
+    font-size: 27px;
+    margin: 0;
     margin-bottom: 5px;
 }
 
 .theme__block {
-    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 18px;
 }
 
 .logo__text {

@@ -11,30 +11,32 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119563670-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-        gtag('js', new Date());
+      gtag('js', new Date());
 
-        gtag('config', 'UA-119563670-1');
+      gtag('config', 'UA-119563670-1');
     </script>
 </head>
 <body class="theme">
 <header class="page-header">
-    <p class="page-header__descr">Hi, I am Yana and this is my personal website</p>
+    <p class="page-header__descr">Yana Alekseeva</p>
 </header>
 <main class="page-main">
     <section class="about theme__block">
-        <h2 class="about__title reset theme__title">About me</h2>
-        <p class="about__text reset">I am Junior HTML/CSS Developer. Speak Russian, English, a little bit Danish. Live in
-            Denmark, Aarhus.</p>
+        <h2 class="about__title theme__title">About me</h2>
+        <p class="about__text"> I am a Junior HTML developer, who aims to make excellent websites. I have good knowledges
+            of HTML and CSS. I convert Photoshop files into responsible and adaptive pages. Produce readable semantic
+            and performant HTML.
+            I speak Russian and English.</p>
     </section>
     <section class="education theme__block">
-        <h2 class="education__title reset theme__title">Education</h2>
-        <ul class="education__text reset">
+        <h2 class="education__title theme__title">Education</h2>
+        <ul class="education__text">
             <li class="education__item">State University of Management, Moscow, 2008 - 2014;</li>
             <li class="education__item"><a href="https://htmlacademy.ru/" class="page-main__link">HTML Academy
                 interactive
@@ -46,20 +48,51 @@
             </li>
         </ul>
     </section>
-    <section class="projects theme__block">
-        <h2 class="projects__title reset theme__title">My projects</h2>
-        <ul class="reset">
-            <li class="projects__item"><a class="page-main__link projects__link" href="./pink">Pink</a></li>
-            <li class="projects__item"><a class="page-main__link projects__link" href="./sedona">Sedona</a></li>
+    <section class="skills theme__block">
+        <h2 class="skills__title theme__title">Professional skills</h2>
+        <ul class="skills__list">
+            <li class="skills__item">CSS;</li>
+            <li class="skills__item">HTML;</li>
+            <li class="skills__item">JavaScript (Basic knowledge);
+            </li>
+            <li class="skills__item">Adobe Photoshop;
+            </li>
+            <li class="skills__item">Adaptive web design;
+            </li>
+            <li class="skills__item">Semantic HTML;
+            </li>
+            <li class="skills__item">Cross-browser;
+            </li>
+            <li class="skills__item">BEM Methodology;
+            </li>
+            <li class="skills__item">Less;
+            </li>
+            <li class="skills__item">Gulp;
+            </li>
         </ul>
     </section>
-    <section class="contacts theme__block">
-        <h2 class="contacts__title reset theme__title">My contacts</h2>
-        <p class="reset"><a href="mailto:alekseevayana@bk.ru" class="page-main__link reset">alekseevayana@bk.ru</a></p>
+    <section class="projects theme__block">
+        <h2 class="projects__title theme__title">My projects</h2>
+        <ul class="projects__list">
+            <li class="projects__item">
+                <a class="page-main__link projects__link" href="./pink" target="_blank">
+                    <img src="./img/pink.png" alt="" width="370" height="200">
+                </a></li>
+            <li class="projects__item">
+                <a class="page-main__link projects__link" href="./sedona" target="_blank">
+                <img src="./img/sedona.png" alt="" width="370" height="200">
+            </a></li>
+        </ul>
     </section>
     <!--<section class="logo">-->
-        <!--<p class="logo__text">I/Yana</p>-->
+    <!--<p class="logo__text">I/Yana</p>-->
     <!--</section>-->
 </main>
+<footer class="contacts theme__block">
+    <h2 class="contacts__title theme__title">My contacts</h2>
+    <p class="contacts__email"><a href="mailto:alekseevayana@bk.ru" class="contacts__email-link">alekseevayana@bk.ru</a>
+    </p>
+    <p class="contacts__location">Aarhus, Denmark</p>
+</footer>
 </body>
 </html>
