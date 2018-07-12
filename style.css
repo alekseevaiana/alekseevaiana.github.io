@@ -1,12 +1,16 @@
 body {
     font-family: 'Tajawal', sans-serif;
     margin: 0;
+    height: 100%;
 }
+
 
 .page-main {
     font-size: 18px;
     background-color: #F5F5F5;
-    color: #616161;
+    color: #202020;
+    padding-right: 10px;
+    height: 100%;
 }
 
 .page-header {
@@ -49,6 +53,7 @@ body {
 
 .projects__item {
     margin-right: 20px;
+    overflow: hidden;
 }
 
 .projects__item:last-child {
@@ -89,4 +94,28 @@ body {
     /*padding-bottom: 6px;*/
     font-weight: bold;
     font-size: 24px;
+}
+
+.contacts__location {
+    margin: 0;
+}
+
+@media screen and (max-width: 350px) {
+
+    .projects {
+        padding-left: 0;
+    }
+
+    .projects__title {
+        padding-left: 20px;
+    }
+
+    .projects__list {
+        padding-left: 10px;
+    }
+
+    .projects__item {
+        margin-right: 0px;
+        overflow: hidden;
+    }
 }
