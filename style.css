@@ -100,6 +100,18 @@ body {
 
 .contacts__location {
     margin: 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+.contacts__location::before {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 20px;
+    background-image: url("./img/home.svg");
+    left: 0;
+    bottom: 6px;
 }
 
 @media screen and (max-width: 350px) {
