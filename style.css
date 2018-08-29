@@ -133,3 +133,16 @@ body {
         overflow: hidden;
     }
 }
+
+.contacts__github-link {
+    display: block;
+    background-image: url("./img/github.png");
+    width: 100px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contacts__github-link:hover {
+
+}
