@@ -739,7 +739,7 @@ body {
 }
 @media (min-width: 1000px) {
   .portfolio__title {
-    padding-left: 8px;
+    padding-left: 0;
   }
 }
 .portfolio__list {
@@ -772,6 +772,7 @@ body {
         -ms-flex-pack: start;
             justify-content: flex-start;
     padding-left: 0;
+    padding-right: 0;
   }
 }
 .portfolio__item {
