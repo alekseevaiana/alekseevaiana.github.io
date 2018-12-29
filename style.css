@@ -11,7 +11,6 @@ body {
     background-color: #F5F5F5;
     color: #202020;
     padding-right: 10px;
-    padding-bottom: 20px;
     flex-grow: 1;
 }
 
@@ -40,10 +39,6 @@ body {
     max-width: 1000px;
 }
 
-.projects {
-    padding-bottom: 20px;
-}
-
 .projects__list {
     display: flex;
     justify-content: flex-start;
@@ -55,6 +50,7 @@ body {
 
 .projects__item {
     margin-right: 20px;
+    margin-bottom: 20px;
     overflow: hidden;
 }
 
