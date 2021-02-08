@@ -1,6 +1,23 @@
+/* page styles */
+
 body {
     font-family: 'Tajawal', sans-serif;
     margin: 0;
+}
+
+.main-font {
+    font-size: 16px;
+}
+
+.dark-font {
+    color: #37474f;
+}
+
+.light-font {
+    color: #F5F5F5;
+}
+
+.theme {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -9,14 +26,14 @@ body {
 .page-main {
     font-size: 18px;
     background-color: #F5F5F5;
-    color: #202020;
+/*    color: #202020; */
     padding-right: 10px;
     flex-grow: 1;
 }
 
 .page-header {
     background-color: #37474f;
-    color: #F5F5F5;
+/*    color: #F5F5F5; */
     margin: 0;
     padding: 20px;
 }
@@ -139,6 +156,30 @@ body {
     background-size: contain;
 }
 
-.contacts__github-link:hover {
+/* components */
 
+.ui-widget-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #95a5a6;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+#dialog {
+    display: none; 
+}
+
+.project_popup {
+    background-color:#37474f;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 320px;
+    max-width: 620px;
+    height: auto;
+    padding: 20px;
+    border-radius: 7px;
 }
