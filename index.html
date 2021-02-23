@@ -25,7 +25,7 @@
 
 </head>
 <body>
-    <div class="theme">
+    <div class="theme main-font">
         <header class="page-header light-font">
             <p class="page-header__descr">Iana Alekseeva</p>
         </header>
@@ -74,30 +74,30 @@
             <section class="projects theme__block">
                 <h2 class="projects__title theme__title">My web projects</h2>
                 <ul class="projects__list">
-                    <li class="projects__item">
-                        <a id="opener" class="page-main__link projects__link">
+                    <li class="projects__item" id="1">
+                        <a id="1" class="page-main__link projects__link">
                             <img src="./img/pink.jpg" alt="" width="300" height="155">
                         </a></li>
-                    <li class="projects__item">
+                    <li class="projects__item" id = "2">
                         <a class="page-main__link projects__link">
                             <img src="./img/sedona.jpg" alt="" width="300" height="155">
                         </a></li>
-                    <li class="projects__item">
+                    <li class="projects__item" id = "3">
                         <a class="page-main__link projects__link" href="./interior_design" target="_blank">
                             <img src="./img/interior-design-for-portfolio.jpg" alt="" width="300" height="155">
                         </a></li>
-                    <li class="projects__item">
+                    <li class="projects__item" id="4">
                         <a class="page-main__link projects__link" href="https://alekseevaiana.github.io/vinishko/" target="_blank">
                             <img src="img/vinishko.png" alt="" width="300" height="155">
                         </a></li>
-                    <li class="projects__item">
-                        <a class="page-main__link projects__link" href="https://basecamp-17.herokuapp.com" target="_blank">
+                    <li class="projects__item" id="5">
+                        <a id="5" class="page-main__link projects__link" target="_blank">
                             <img src="img/basecamp.png" alt="" width="300" height="155">
                         </a></li>             
                 </ul>
             </section>
         </main>
-        <footer class="contacts theme__block">
+        <footer class="contacts theme__block light-font">
             <h2 class="contacts__title theme__title">My contacts</h2>
             <p class="contacts__email"><a href="mailto:alekseevayana@bk.ru"
                     class="contacts__email-link">alekseevadev@gmail.com</a>
@@ -109,11 +109,19 @@
         </footer>
     </div>
     
-        <div id="dialog" title="Pink" class="project_popup light-font main-font">
-            <h3>Pink</h3>
-            <p>Project converted from PSD into a HTML-CSS layout.</p>
+        <div id="dialog" class="project_popup light-font main-font">
+            <div class="popup_header">
+                <h3 class="project_title"></h3>
+                <button class="popup_close">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                        <title>Close</title>
+                        <path fill="white" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/>
+                    </svg>
+                </button>
+            </div>
+            <p class="project_description">Project converted from PSD into a HTML-CSS layout.</p>
             <p>Used tecknologies:</p>
-            <p>CSS, HTML, SVG, LESS, GULP, Cross-Browser Compatibility, Responsive and Adaptive templates</p>
+            <p class="project_teck">CSS, HTML, SVG, LESS, GULP, Cross-Browser Compatibility, Responsive and Adaptive templates</p>
             <a class="page-main__link projects__link" href="./pink" target="_blank">Open in a new tab</a>
         </div>
     <script src="popup.js"></script>
