@@ -65,11 +65,13 @@ let addClickHandler = function(item) {
         let item_title = popup.querySelector(".project_title");
         let item_description = popup.querySelector(".project_description");
         let item_teck = popup.querySelector(".project_teck");
+        let item_link = popup.querySelector(".projects__link");
 
         let projectDataEl = projectData.find(element => element.id === item.id);
         item_title.innerHTML = projectDataEl.title;
         item_description.innerHTML = projectDataEl.description;
         item_teck.innerHTML = projectDataEl.teck;
+        item_link.href = projectDataEl.link;
         addCloseHandler(popup, close_popup_icon);
     });
 
