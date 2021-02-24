@@ -33,7 +33,7 @@ const projectData = [
         image: "./img/vinishko.png",
         link: "https://alekseevaiana.github.io/vinishko/",
         description: "Project converted from PSD into a HTML-CSS layout.",
-        teck: "CSS, HTML, SVG, LESS, GULP, Cross-Browser Compatibility, Responsive and Adaptive templates"
+        teck: "React, JavaScript, CSS, HTML"
     },
     {
         title: "Basecamp",
@@ -45,29 +45,27 @@ const projectData = [
     }
 ];
 
-let project_list = document.querySelector(".projects__list");
-let project_items = document.querySelectorAll(".projects__item"); 
+const project_list = document.querySelector(".projects__list");
+const project_items = document.querySelectorAll(".projects__item"); 
 
-let popup = document.getElementById("dialog");
-let close_popup_icon = popup.querySelector(".popup_close");
+const popup = document.getElementById("dialog");
+const close_popup_icon = popup.querySelector(".popup_close");
+const item_title = popup.querySelector(".project_title");
+const item_description = popup.querySelector(".project_description");
+const item_teck = popup.querySelector(".project_teck");
+const item_link = popup.querySelector(".projects__link");
 
-let addCloseHandler = function(block, element) {
+const addCloseHandler = function(block, element) {
     element.addEventListener("click", function() {
         block.style.display = "none";
     })
 }
 
-let addClickHandler = function(item) {
+const addClickHandler = function(item) {
     
     item.addEventListener("click", function() {
         popup.style.display = "block";
-        let close_btn = popup.querySelector(".popup_close");
-        let item_title = popup.querySelector(".project_title");
-        let item_description = popup.querySelector(".project_description");
-        let item_teck = popup.querySelector(".project_teck");
-        let item_link = popup.querySelector(".projects__link");
-
-        let projectDataEl = projectData.find(element => element.id === item.id);
+        const projectDataEl = projectData.find(element => element.id === item.id);
         item_title.innerHTML = projectDataEl.title;
         item_description.innerHTML = projectDataEl.description;
         item_teck.innerHTML = projectDataEl.teck;
@@ -78,7 +76,6 @@ let addClickHandler = function(item) {
 }
 
 for (let index = 0; index < project_items.length; index++) {
-    let project_item = project_items[index];
-    
+    const project_item = project_items[index];
     addClickHandler(project_item);
 }
