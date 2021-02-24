@@ -17,12 +17,18 @@ button {
   font-size: 24px;
 }
 
+/* page styles */
+
 .dark-font {
-  color: #37474f;
+  color: #1d3557;
 }
 
 .light-font {
-  color: #f5f5f5;
+  color: #f1faee;
+}
+
+.dark_bkg {
+  background-color: #1d3557;
 }
 
 .theme {
@@ -34,11 +40,13 @@ button {
 .page-main {
   background-color: #f5f5f5;
   padding-right: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   flex-grow: 1;
 }
 
 .page-header {
-  background-color: #37474f;
+  background-color: #1d3557;
   margin: 0;
   padding: 20px;
 }
@@ -49,11 +57,11 @@ button {
 }
 
 .page-main__link {
-  color: #616161;
+  color: #457b9d;
 }
 
 .page-main__link:hover {
-  color: rgb(244, 113, 66);
+  color: #a8dadc;
 }
 
 .about {
@@ -73,6 +81,7 @@ button {
   margin-right: 20px;
   margin-bottom: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .projects__item:last-child {
@@ -80,16 +89,11 @@ button {
 }
 
 .contacts {
-  background-color: #37474f;
   padding-bottom: 20px;
 }
 
 .contacts__email-link {
   color: inherit;
-}
-
-.contacts__email-link:hover {
-  color: rgb(244, 113, 66);
 }
 
 .theme__title {
@@ -122,7 +126,7 @@ button {
   height: 20px;
   background-image: url("./img/home.svg");
   left: 0;
-  bottom: 6px;
+  bottom: 11.5px;
 }
 
 .contacts__github-link {
@@ -136,21 +140,11 @@ button {
 
 /* components */
 
-.ui-widget-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #95a5a6;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-}
-
 #dialog {
   display: none;
 }
 
 .project_popup {
-  background-color: #37474f;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -180,6 +174,11 @@ button {
 
 .popup_close svg path {
   fill: white;
+}
+
+.popup_close .projects__link {
+  color: white;
+  cursor: pointer;
 }
 
 /* MAX WIDTH 350 */
