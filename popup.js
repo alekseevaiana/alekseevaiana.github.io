@@ -32,7 +32,7 @@ const projectData = [
         id: "4",
         image: "./img/vinishko.png",
         link: "https://alekseevaiana.github.io/vinishko/",
-        description: "Project converted from PSD into a HTML-CSS layout.",
+        description: "My first application builded using React Framework",
         teck: "React, JavaScript, CSS, HTML"
     },
     {
