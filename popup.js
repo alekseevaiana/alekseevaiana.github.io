@@ -8,6 +8,7 @@ const projectData = [
         id: "1",
         image: "./img/pink.jpg",
         link: "./pink",
+        github_link: "https://github.com/alekseevaiana/505469-pink",
         description: "Project converted from PSD into a HTML-CSS layout.",
         teck: "CSS, HTML, SVG, LESS, GULP, Cross-Browser Compatibility, Responsive and Adaptive templates"
     },
@@ -16,6 +17,7 @@ const projectData = [
         id: "2",
         image: "./img/sedona.jpg",
         link: "./sedona",
+        github_link: "https://github.com/alekseevaiana/505469-sedona",
         description: "Project converted from PSD into a HTML-CSS layout.",
         teck: "CSS, HTML, Cross-Browser Compatibility"
     },
@@ -24,6 +26,7 @@ const projectData = [
         id: "3",
         image: "./img/interior-design-for-portfolio.jpg",
         link: "./interior_design",
+        github_link: "https://github.com/alekseevaiana/interior_design",
         description: "Project converted from PSD into a HTML-CSS layout.",
         teck: "CSS, HTML, Cross-Browser Compatibility"
     },
@@ -32,6 +35,7 @@ const projectData = [
         id: "4",
         image: "./img/vinishko.png",
         link: "https://alekseevaiana.github.io/vinishko/",
+        github_link: "https://github.com/alekseevaiana/vinishko",
         description: "My first application builded using React Framework",
         teck: "React, JavaScript, CSS, HTML"
     },
@@ -40,6 +44,7 @@ const projectData = [
         id: "5",
         image: "img/basecamp.png",
         link: "https://basecamp-17.herokuapp.com",
+        github_link: "https://github.com/alekseevaiana/my_basecamp",
         description: "This project is developing in Ruby on Rails.",
         teck: "Ruby, Ruby on Rails, SQL, SASS, CSS, HTML"
     }
@@ -54,6 +59,8 @@ const item_title = popup.querySelector(".project_title");
 const item_description = popup.querySelector(".project_description");
 const item_teck = popup.querySelector(".project_teck");
 const item_link = popup.querySelector(".projects__link");
+const github_link = popup.querySelector(".projects__github_link");
+
 
 const addCloseHandler = function(block, element) {
     element.addEventListener("click", function() {
@@ -70,6 +77,7 @@ const addClickHandler = function(item) {
         item_description.innerHTML = projectDataEl.description;
         item_teck.innerHTML = projectDataEl.teck;
         item_link.href = projectDataEl.link;
+        github_link.href = projectDataEl.github_link;
         addCloseHandler(popup, close_popup_icon);
     });
 
