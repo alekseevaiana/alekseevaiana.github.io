@@ -27,85 +27,100 @@
 <body>
     <div class="theme main-font">
         <header class="page-header light-font dark_bkg">
-            <p class="page-header__descr">Iana Alekseeva</p>
+            <div class="container">
+                <p class="page-header__descr">Iana Alekseeva</p>
+                <p class="larger-font">Software Engineer</p>
+            </div>
         </header>
         <main class="page-main">
-            <section class="education theme__block">
-                <h2 class="education__title theme__title">Education</h2>
-                <ul class="education__text">
-                    <li class="education__item"><a class="page-main__link" href="https://qwasar.io/tech-talent-programs/full-stack-developer-program/" target="_blank">Qwasar Silicon Valley, Full Stack Development Program</a>, since April 2020</li>
-                    
-                    <li class="education__item"><a href="https://htmlacademy.ru/" class="page-main__link">HTML Academy
-                        interactive
-                        online courses:</a>, <br/>
-                        Professional HTML & CSS,
-                        <a class="page-main__link"
-                                href="https://assets.htmlacademy.ru/certificates/intensive/71/505469.pdf">level 2
-                        </a>,
-                        02.2018 - 05.2018; <br/>
-                        <a class="page-main__link" href="https://assets.htmlacademy.ru/certificates/intensive/95/505469.pdf">Professional JavaScript, </a>11.2018-12.2018
-                    </li>
-                    <li class="education__item">State University of Management, Moscow, 2008 - 2014</li>
-                </ul>
-            </section>
-            <section class="skills theme__block">
-                <h2 class="skills__title theme__title">Professional skills</h2>
-                <ul class="skills__list">
-                    <li class="skills__item">Ruby</li>
-                    <li class="skills__item">C language</li>
-                    <li class="skills__item">JavaScript
-                    </li>
-                    <li class="skills__item">CSS</li>
-                    <li class="skills__item">HTML</li>
-                    <li class="skills__item">React</li>
-                    <li class="skills__item">Unix/Linux Terminal</li>
-                    <li class="skills__item">GIT
-                    </li>
-                </ul>
-            </section>
-            <section class="projects theme__block">
-                <h2 class="projects__title theme__title">My web projects</h2>
-                <ul class="projects__list">
-                    <li class="projects__item" id="1">
-                        <a id="1" class="page-main__link projects__link">
-                            <img src="./img/pink.jpg" alt="" width="300" height="155">
-                        </a></li>
-                    <li class="projects__item" id = "2">
-                        <a class="page-main__link projects__link">
-                            <img src="./img/sedona.jpg" alt="" width="300" height="155">
-                        </a></li>
-                    <li class="projects__item" id = "3">
-                        <a class="page-main__link projects__link">
-                            <img src="./img/interior-design-for-portfolio.jpg" alt="" width="300" height="155">
-                        </a></li>
-                    <li class="projects__item" id="4">
-                        <a class="page-main__link projects__link">
-                            <img src="img/vinishko.png" alt="" width="300" height="155">
-                        </a></li>
-                    <li class="projects__item" id="5">
-                        <a id="5" class="page-main__link projects__link">
-                            <img src="img/basecamp.png" alt="" width="300" height="155">
-                        </a></li>             
-                </ul>
-            </section>
-            <section class="about theme__block">
-                <h2 class="about__title theme__title">About me</h2>
-                <p class="about__text">I have been coding for about 3 years making projects with different technologies, and building strong technical skills in data structures and algorithms. 
-                    All of it gives me a deep understanding of computer science.</p>
-                    <p>So by this day, I tried front end, back end, and I even tried to code on low-level language - C. Now I am very confident, that I want to create excellent websites for people.</p>
-                    <p>I am a kind and positive person, good at teamwork, a fast learner, and a hard worker. And I love to code!</p>
-                    <p>In my free time, I like hiking, traveling, reading, spending time with people, and many other things. </p>
-            </section>
+            <div class="container">
+                <section class="education page__item">
+                    <h2 class="education__title theme__title">Education</h2>
+                    <ul class="education__text">
+                        <li class="education__item"><a class="page-main__link" href="https://qwasar.io/tech-talent-programs/full-stack-developer-program/" target="_blank">Qwasar Silicon Valley, Full Stack Development Program</a>, since April 2020</li>
+                        
+                        <li class="education__item"><a href="https://htmlacademy.ru/" class="page-main__link">HTML Academy
+                            interactive
+                            online courses:</a>, <br/>
+                            Professional HTML & CSS,
+                            <a class="page-main__link"
+                                    href="https://assets.htmlacademy.ru/certificates/intensive/71/505469.pdf">level 2
+                            </a>,
+                            02.2018 - 05.2018; <br/>
+                            <a class="page-main__link" href="https://assets.htmlacademy.ru/certificates/intensive/95/505469.pdf">Professional JavaScript, </a>11.2018-12.2018
+                        </li>
+                        <li class="education__item">State University of Management, Moscow, 2008 - 2014</li>
+                    </ul>
+                </section>
+                <section class="skills page__item">
+                    <h2 class="skills__title theme__title">Professional skills</h2>
+                    <ul class="skills__list">
+                        <li class="skills__item"><button class="skills__button larger-font">Ruby</button></li>
+                        <li class="skills__item"><button class="skills__button larger-font">Ruby on Rails</button></li>
+                        <li class="skills__item"><button class="skills__button larger-font">C language</button></li>
+                        <li class="skills__item"><button class="skills__button larger-font">JavaScript</button>
+                        </li>
+                        <li class="skills__item"><button class="skills__button larger-font">CSS</button></li>
+                        <li class="skills__item"><button class="skills__button larger-font">HTML</button></li>
+                        <li class="skills__item"><button class="skills__button larger-font">React</button></li>
+                        <li class="skills__item"><button class="skills__button larger-font">Unix/Linux Terminal</button></li>
+                        <li class="skills__item"><button class="skills__button larger-font">GIT</button>
+                        </li>
+                    </ul>
+                </section>
+                <section class="projects page__item">
+                    <h2 class="projects__title theme__title">My web projects</h2>
+                    <ul class="projects__list">
+                        <li class="projects__item" id="1">
+                            <a id="1" class="page-main__link projects__link">
+                                <img src="./img/pink.jpg" alt="" width="300" height="155">
+                            </a></li>
+                        <li class="projects__item" id = "2">
+                            <a class="page-main__link projects__link">
+                                <img src="./img/sedona.jpg" alt="" width="300" height="155">
+                            </a></li>
+                        <li class="projects__item" id = "3">
+                            <a class="page-main__link projects__link">
+                                <img src="./img/interior-design-for-portfolio.jpg" alt="" width="300" height="155">
+                            </a></li>
+                        <li class="projects__item" id="4">
+                            <a class="page-main__link projects__link">
+                                <img src="img/vinishko.png" alt="" width="300" height="155">
+                            </a></li>
+                        <li class="projects__item" id="5">
+                            <a id="5" class="page-main__link projects__link">
+                                <img src="img/basecamp.png" alt="" width="300" height="155">
+                            </a></li>             
+                    </ul>
+                </section>
+                <section class="about page__item">
+                    <h2 class="about__title theme__title">About me</h2>
+                    <p class="about__text">I have been coding for about 3 years, 
+                        doing projects with different technologies, and building strong 
+                        technical skills in data structures and algorithms. So to this day, 
+                        I worked with frontend, backend, and I even coded in low-level language - C. 
+                        I have learned all of this because I am a "why question" person. 
+                        It is important to me to understand what is going on under the hood of technologies 
+                        that I work with and how they work together. Now I am very confident that I want to 
+                        create excellent websites for people.</p>
+                        <p>I am a kind and positive person, good at teamwork, 
+                            a fast learner, and a hard worker. And I love to code!
+                        </p>
+                        <p>In my free time, I like hiking, traveling, reading, spending time with people, and many other things.</p>
+                </section>
+            </div>
         </main>
-        <footer class="contacts theme__block light-font dark_bkg">
-            <h2 class="contacts__title theme__title">My contacts</h2>
-            <p class="contacts__email"><a href="mailto:alekseevayana@bk.ru"
-                    class="page-main__link contacts__email-link">alekseevadev@gmail.com</a>
-            </p>
-            <p class="contacts__github">
-                <a class="contacts__github-link" href="https://github.com/alekseevaiana"></a>
-            </p>
-            <p class="contacts__location">Silicon Valley, USA</p>
+        <footer class="contacts light-font dark_bkg">
+            <div class="container">
+                <h2 class="contacts__title theme__title">My contacts</h2>
+                <p class="contacts__email"><a href="mailto:alekseevayana@bk.ru"
+                        class="page-main__link contacts__email-link">alekseevadev@gmail.com</a>
+                </p>
+                <p class="contacts__github">
+                    <a class="contacts__github-link" href="https://github.com/alekseevaiana"></a>
+                </p>
+                <p class="contacts__location">Silicon Valley, USA</p>
+            </div>
         </footer>
     </div>
     
