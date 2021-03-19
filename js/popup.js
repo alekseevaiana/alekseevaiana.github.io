@@ -2,10 +2,6 @@
 // find every item in list
 // add event listener to every item
 
-'use strict';
-
-(function () {
-
 const projectData = [
     {
         title: "Pink",
@@ -96,5 +92,3 @@ for (let index = 0; index < project_items.length; index++) {
     const project_item = project_items[index];
     addClickHandler(project_item);
 }
-
-})();
