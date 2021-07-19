@@ -34,19 +34,33 @@
         </header>
         <main class="page-main">
             <div class="container">
-                
+                <!-- <section class="about page__item">
+                    <h2 class="about__title theme__title">About me</h2>
+                    <p class="about__text">I have been coding for about 3 years, 
+                        doing projects with different technologies, and building strong 
+                        technical skills in data structures and algorithms. So to this day, 
+                        I worked with frontend, backend, and I even coded in low-level language - C. 
+                        I have learned all of this because I am a "why question" person. 
+                        It is important to me to understand what is going on under the hood of technologies 
+                        that I work with and how they work together. Now I am very confident that I want to 
+                        create excellent websites for people.</p>
+                        <p>I am a kind and positive person, good at teamwork, 
+                            a fast learner, and a hard worker. And I love to code!
+                        </p>
+                        <p>In my free time, I like hiking, traveling, reading, spending time with people, and many other things.</p>
+                </section> -->
                 <section class="skills page__item">
                     <h2 class="skills__title theme__title">Professional skills</h2>
                     <ul class="skills__list">
                         <li class="skills__item"><button class="skills__button larger-font">Ruby</button></li>
                         <li class="skills__item"><button class="skills__button larger-font">Ruby on Rails</button></li>
-                        <li class="skills__item"><button class="skills__button larger-font">C language</button></li>
+                        <li class="skills__item"><button class="skills__button larger-font">C</button></li>
                         <li class="skills__item"><button class="skills__button larger-font">JavaScript</button>
                         </li>
                         <li class="skills__item"><button class="skills__button larger-font">CSS</button></li>
                         <li class="skills__item"><button class="skills__button larger-font">HTML</button></li>
                         <li class="skills__item"><button class="skills__button larger-font">React</button></li>
-                        <li class="skills__item"><button class="skills__button larger-font">Unix/Linux Terminal</button></li>
+                        <li class="skills__item"><button class="skills__button larger-font">CLI</button></li>
                         <li class="skills__item"><button class="skills__button larger-font">GIT</button>
                         </li>
                     </ul>
@@ -76,7 +90,7 @@
                             </a></li>             
                     </ul>
                 </section>
-                <section class="education page__item">
+                <!-- <section class="education page__item">
                     <h2 class="education__title theme__title">Education</h2>
                     <ul class="education__text">
                         <li class="education__item"><a class="page-main__link" href="https://qwasar.io/tech-talent-programs/full-stack-developer-program/" target="_blank">Qwasar Silicon Valley, Full Stack Development Program</a>, since April 2020</li>
@@ -93,22 +107,8 @@
                         </li>
                         <li class="education__item">State University of Management, Moscow, 2008 - 2014</li>
                     </ul>
-                </section>
-                <section class="about page__item">
-                    <h2 class="about__title theme__title">About me</h2>
-                    <p class="about__text">I have been coding for about 3 years, 
-                        doing projects with different technologies, and building strong 
-                        technical skills in data structures and algorithms. So to this day, 
-                        I worked with frontend, backend, and I even coded in low-level language - C. 
-                        I have learned all of this because I am a "why question" person. 
-                        It is important to me to understand what is going on under the hood of technologies 
-                        that I work with and how they work together. Now I am very confident that I want to 
-                        create excellent websites for people.</p>
-                        <p>I am a kind and positive person, good at teamwork, 
-                            a fast learner, and a hard worker. And I love to code!
-                        </p>
-                        <p>In my free time, I like hiking, traveling, reading, spending time with people, and many other things.</p>
-                </section>
+                </section> -->
+                
             </div>
         </main>
         <footer class="contacts light-font dark_bkg">
@@ -138,8 +138,10 @@
             <p class="project_description">Project converted from PSD into a HTML-CSS layout.</p>
             <p>Used tecknologies:</p>
             <p class="project_teck">CSS, HTML, SVG, LESS, GULP, Cross-Browser Compatibility, Responsive and Adaptive templates</p>
-            <p><a class="page-main__link projects__link" target="_blank">Open in a new tab</a></p>
-            <p><a class="page-main__link projects__github_link" target="_blank">Open GITHUB project in a new tab</a></p>
+            <div class="page-main__links-wrapper">
+                <a class="page-main__link projects__link projects__button light_bkg" target="_blank">Demo</a>
+                <a class="page-main__link projects__github_link projects__button light_bkg" target="_blank">Github</a>
+            </div>
         </div>
     <script src="js/data.js"></script>
     <script src="js/popup.js"></script>
